@@ -1,1 +1,33 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+    /* Шрифты */
+    --main-font: 'Inter', sans-serif;
+    --accent-font: 'PressStart2P', fantasy;
+
+    /* Веса и размеры шрифтов */
+    --text-weight: 400;
+    --title-weight: 700;
+    --accent-font-weight: 400;
+    --accent-title-font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+    --accent-font-heading-font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
+    
+    /* Размеры контента */
+    --content-width: 48.6vw;
+
+    /* Основные цвета */
+    --light-color: #fff;
+    --dark-color: #000;
+    --text-stroke-color: #fff;
+    --text-color: #000;
+    --border-color-dark: #000;
+
+    /* Цвета для анимации сердца */
+    --heart-contour-color: #000;
+    --animation-fill-color: red;
+    
+    /* Фоновое изображение */
+    --background-image:
+        repeating-linear-gradient(90deg, #d3d3d3 0px, #d3d3d3 2px, transparent 2px, transparent 4px),
+        repeating-linear-gradient(0deg, #d3d3d3 0px, #d3d3d3 2px, transparent 2px, transparent 4px),
+        linear-gradient(180deg, #e7e7e7 0.01%, #1a1a1a 100%);
+}

@@ -51,3 +51,13 @@ ol {
   clip-path: inset(50%);
   white-space: nowrap;
 }
+
+button {
+  border: none;
+  background-color: transparent;
+}
+
+img {
+  display: block;
+  width: 100%;
+}

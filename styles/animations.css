@@ -9,3 +9,171 @@
 ✦ button__text — для обозначения текстового элемента внутри кнопки
 
 */
+
+
+@keyframes fade-in {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes fade-out {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes sparks-animation {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+
+
+.card__like-button:focus,
+.footer__button:focus,
+.card__like-button:focus,
+.modal-button:focus,
+.card__icon-button:focus {
+    outline: none;
+}
+
+.card__icon-button:focus-visible {
+    outline: 2px solid var(--border-color-dark);
+    padding-top: 4px;
+    padding-bottom: 0;
+}
+
+.card__like-button,
+.footer__button,
+.modal-button {
+    position: relative;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+    background-color: var(--light-color);
+    color: var(--light-color);
+}
+
+.card__like-button:focus-visible,
+.footer__button:focus-visible,
+.modal-button:focus-visible {
+    box-shadow: 2px 2px 0 var(--dark-color);
+}
+
+.card__like-button::after,
+.footer__button::after,
+.modal-button::after {
+    content: '';
+    position: absolute;
+    z-index: 0;
+    inset: 0;
+    background-color: var(--dark-color);
+    transform: translateX(-100%);
+    animation-fill-mode: both;
+}
+
+.card__like-button:hover::after,
+.footer__button:hover::after,
+.modal-button:hover::after {
+    animation: fade-in 0.5s ease-in-out forwards;
+}
+
+.card__like-button:not(:hover)::after,
+.footer__button:not(:hover)::after,
+.modal-button:not(:hover)::after {
+    animation: fade-out 0.5s ease-in-out forwards;
+}
+
+
+/* like button styles */
+
+.contour {
+    fill: var(--heart-contour-color);
+}
+
+.sparks {
+    opacity: 0;
+    fill: transparent;
+}
+
+.main-body,
+.core {
+    fill: transparent;
+    transition: fill 0.3s ease;
+}
+
+/* Анимация при наведении */
+.card__icon-button:hover .core {
+    fill: var(--dark-color);
+    transition: fill 0.3s ease;
+}
+
+.card__icon-button:hover .main-body {
+    fill: var(--dark-color);
+    transition: fill 0.3s ease 0.05s;
+}
+
+/* Анимация при уходе курсора */
+.card__icon-button:not(:hover) .main-body {
+    transition: fill 0.3s ease;
+}
+
+.card__icon-button:not(:hover) .core {
+    transition: fill 0.3s ease 0.03s;
+}
+
+/* Анимация при активном состоянии */
+.card__icon-button:active .core,
+.card__icon-button:active .main-body {
+    fill: var(--animation-fill-color);
+}
+
+.like-icon.is-liked .core,
+.like-icon.is-liked .main-body {
+    fill: var(--animation-fill-color);
+}
+
+.like-icon.is-liked {
+    animation: pulse 0.5s ease-in-out;
+}
+
+.like-icon.is-liked .sparks {
+    opacity: 1;
+    fill: var(--animation-fill-color);
+    animation: sparks-animation 0.3s ease-in 0.3s forwards;
+}
+
+.like-icon:not(.is-liked) .contour {
+    transition: fill 0.1s linear;
+}
