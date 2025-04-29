@@ -6,6 +6,7 @@
     <title>Закрывающий тег</title>
     <link rel="icon" href="./svg/" sizes="any" />
     <link rel="icon" href="./svg/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./svg/apple-touch-icon.png" />
     <link rel="stylesheet" href="./fonts/fonts.css" />
     <link rel="stylesheet" href="./styles/variables.css" />
     <link rel="stylesheet" href="./styles/globals.css" />
@@ -30,7 +31,7 @@
             <div class="image-container">
               <p class="article__accent-text">&lt;начало&gt;</p>
               <img
-                class="filter-brightness"
+                class="image filter-brightness"
                 src="./images/section-one.jpg"
                 alt="Ноутбук с изображением слов just start на экране"
                 loading="lazy"
@@ -55,7 +56,7 @@
                 возможностей.
               </p>
               <div class="user-action__buttons">
-                <button class="card__icon-button">
+                <button class="card__icon-button" type="button">
                   <svg
                     class="like-icon"
                     xmlns="http://www.w3.org/2000/svg"
@@ -63,6 +64,7 @@
                     width="39"
                     height="36"
                     viewBox="0 0 39 36"
+                    aria-hidden="true"
                   >
                     <g class="heart">
                       <path
@@ -72,23 +74,23 @@
                       />
                       <path
                         class="core"
-                        fill="red"
+                        fill="none"
                         d="M12 9H9v3h3V9Zm3 3h-3v3h3v-3Zm3-3h-3v3h3V9Zm-6 6H9v3h3v-3Zm3 0h-3v3h3v-3Zm0 3h-3v3h3v-3Zm3-6h-3v3h3v-3Zm0 9h-3v3h3v-3Zm0-3h-3v3h3v-3Zm9-9h3v3h-3V9Zm-3 0h3v3h-3V9Zm3 3h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm-3-3h3v3h-3V9Zm6 6h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-3-6h3v3h-3v-3Zm0 9h3v3h-3v-3Zm0-3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0 3h-3v3h3v-3Z"
                       />
                       <path
                         class="main-body"
-                        fill="#fff"
+                        fill="none"
                         d="M18 15h-3v3h3v-3Zm3 0h3v3h-3v-3Zm0 0h-3v3h3v-3Zm0-3h-3v3h3v-3Zm0 6h-3v3h3v-3Z"
                       />
                     </g>
                     <path
                       class="sparks"
-                      fill="red"
+                      fill="none"
                       d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z"
                     />
                   </svg>
                 </button>
-                <button class="card__like-button">
+                <button class="button card__like-button" type="button">
                   <span class="button__text">Like</span>
                 </button>
               </div>
@@ -101,7 +103,7 @@
             <div class="image-container">
               <p class="article__accent-text">&lt;первые шаги&gt;</p>
               <img
-                class="filter-invert"
+                class="image filter-invert"
                 src="./images/section-two.jpg"
                 alt="открытая записная книга с чистыми листами и ручкой на ней"
                 loading="lazy"
@@ -134,7 +136,7 @@
                 можно нарисовать даже свет в конце тоннеля.
               </p>
               <div class="user-action__buttons">
-                <button class="card__icon-button">
+                <button class="card__icon-button" type="button">
                   <svg
                     class="like-icon"
                     xmlns="http://www.w3.org/2000/svg"
@@ -142,6 +144,7 @@
                     width="39"
                     height="36"
                     viewBox="0 0 39 36"
+                    aria-hidden="true"
                   >
                     <g class="heart">
                       <path
@@ -167,7 +170,7 @@
                     />
                   </svg>
                 </button>
-                <button class="card__like-button">
+                <button class="button card__like-button" type="button">
                   <span class="button__text">Like</span>
                 </button>
               </div>
@@ -180,7 +183,7 @@
             <div class="image-container">
               <p class="article__accent-text">&lt;Сомнения&gt;</p>
               <img
-                class="filter-contrast"
+                class="image filter-contrast"
                 src="./images/section-three.jpg"
                 alt="Человек, смотрящий вверх"
                 loading="lazy"
@@ -213,7 +216,7 @@
                 казался неопределённым, но шаги уже не дрожали — они обретали
                 ритм, в котором смешивались и осторожность, и надежда.
               </p>
-              <div class="user-action__buttons">
+              <div class="user-action__buttons" type="button">
                 <button class="card__icon-button">
                   <svg
                     class="like-icon"
@@ -222,6 +225,7 @@
                     width="39"
                     height="36"
                     viewBox="0 0 39 36"
+                    aria-hidden="true"
                   >
                     <g class="heart">
                       <path
@@ -247,7 +251,7 @@
                     />
                   </svg>
                 </button>
-                <button class="card__like-button">
+                <button class="button card__like-button" type="button">
                   <span class="button__text">Like</span>
                 </button>
               </div>
@@ -260,7 +264,7 @@
             <div class="image-container">
               <p class="article__accent-text">&lt;упорство&gt;</p>
               <img
-                class="filter-multi"
+                class="image filter-multi"
                 src="./images/section-fourth.jpg"
                 alt="Человек, стремящийся к вершине"
                 loading="lazy"
@@ -297,7 +301,7 @@
                 бесконечные чёрточки в песочнице «совершенства».
               </p>
               <div class="user-action__buttons">
-                <button class="card__icon-button">
+                <button class="card__icon-button" type="button">
                   <svg
                     class="like-icon"
                     xmlns="http://www.w3.org/2000/svg"
@@ -305,6 +309,7 @@
                     width="39"
                     height="36"
                     viewBox="0 0 39 36"
+                    aria-hidden="true"
                   >
                     <g class="heart">
                       <path
@@ -330,7 +335,7 @@
                     />
                   </svg>
                 </button>
-                <button class="card__like-button">
+                <button class="button card__like-button" type="button">
                   <span class="button__text">Like</span>
                 </button>
               </div>
@@ -343,7 +348,7 @@
             <div class="image-container">
               <p class="article__accent-text">&lt;поддержка&gt;</p>
               <img
-                class="filter-hue"
+                class="image filter-hue"
                 src="./images/section-five.jpg"
                 alt="Группа людей, работающих вместе"
                 loading="lazy"
@@ -382,7 +387,7 @@
                 дальше».
               </p>
               <div class="user-action__buttons">
-                <button class="card__icon-button">
+                <button class="card__icon-button" type="button">
                   <svg
                     class="like-icon"
                     xmlns="http://www.w3.org/2000/svg"
@@ -390,6 +395,7 @@
                     width="39"
                     height="36"
                     viewBox="0 0 39 36"
+                    aria-hidden="true"
                   >
                     <g class="heart">
                       <path
@@ -415,7 +421,7 @@
                     />
                   </svg>
                 </button>
-                <button class="card__like-button">
+                <button class="button card__like-button" type="button">
                   <span class="button__text">Like</span>
                 </button>
               </div>
@@ -428,7 +434,7 @@
             <div class="image-container">
               <p class="article__accent-text">&lt;смена взгляда&gt;</p>
               <img
-                class="filter-grayscale"
+                class="image filter-grayscale"
                 src="./images/section-six.jpg"
                 alt="деревянные дощечки с буквами из которых собраны слова plan start work"
                 loading="lazy"
@@ -447,7 +453,7 @@
                 провал становился картой: «Здесь не иди — здесь уже был».
               </p>
               <div class="user-action__buttons">
-                <button class="card__icon-button">
+                <button class="card__icon-button" type="button">
                   <svg
                     class="like-icon"
                     xmlns="http://www.w3.org/2000/svg"
@@ -455,6 +461,7 @@
                     width="39"
                     height="36"
                     viewBox="0 0 39 36"
+                    aria-hidden="true"
                   >
                     <g class="heart">
                       <path
@@ -480,7 +487,7 @@
                     />
                   </svg>
                 </button>
-                <button class="card__like-button">
+                <button class="button card__like-button" type="button">
                   <span class="button__text">Like</span>
                 </button>
               </div>
@@ -493,7 +500,7 @@
             <div class="image-container">
               <p class="article__accent-text">&lt;отчаяние&gt;</p>
               <img
-                class="filter-blur"
+                class="image filter-blur"
                 src="./images/section-seven.jpg"
                 alt="черно-белое изображение дорожной табличкой с надписью on way"
                 loading="lazy"
@@ -516,7 +523,7 @@
                 кружиться на месте.
               </p>
               <div class="user-action__buttons">
-                <button class="card__icon-button">
+                <button class="card__icon-button" type="button">
                   <svg
                     class="like-icon"
                     xmlns="http://www.w3.org/2000/svg"
@@ -524,6 +531,7 @@
                     width="39"
                     height="36"
                     viewBox="0 0 39 36"
+                    aria-hidden="true"
                   >
                     <g class="heart">
                       <path
@@ -549,7 +557,7 @@
                     />
                   </svg>
                 </button>
-                <button class="card__like-button">
+                <button class="button card__like-button" type="button">
                   <span class="button__text">Like</span>
                 </button>
               </div>
@@ -562,7 +570,7 @@
             <div class="image-container">
               <p class="article__accent-text">&lt;путь&gt;</p>
               <img
-                class="filter-opacity"
+                class="image filter-opacity"
                 src="./images/section-eight.jpg"
                 alt="след ноги человека на песке"
                 loading="lazy"
@@ -585,7 +593,7 @@
                 переменных и тенями сложных макетов, но даже она была лишь одним
                 из островов в океане технологий.
               </p>
-              <div class="user-action__buttons">
+              <div class="user-action__buttons" type="button">
                 <button class="card__icon-button">
                   <svg
                     class="like-icon"
@@ -594,6 +602,7 @@
                     width="39"
                     height="36"
                     viewBox="0 0 39 36"
+                    aria-hidden="true"
                   >
                     <g class="heart">
                       <path
@@ -619,7 +628,7 @@
                     />
                   </svg>
                 </button>
-                <button class="card__like-button">
+                <button class="button card__like-button" type="button">
                   <span class="button__text">Like</span>
                 </button>
               </div>
@@ -627,16 +636,14 @@
           </article>
         </li>
       </ul>
-    </main>
-    <footer class="footer">
-      <div class="footer-button__container">
+      <div class="floppy-button__container">
         <button
-          class="footer__button"
+          class="button floppy-icon__button"
           type="button"
           onclick="window['modal-message'].showModal()"
           aria-controls="modal-message"
         >
-          <svg class="floppy-icon" viewBox="0 0 40 40">
+          <svg class="floppy-icon" viewBox="0 0 40 40" aria-hidden="true">
             <use href="./svg/save.svg#save-icon"></use>
           </svg>
           <span class="button__text">Сохранить на память</span>
@@ -644,18 +651,18 @@
         <dialog class="modal-message" id="modal-message">
           <form class="modal-text__form" method="dialog">
             <div class="floppy-icon__content">
-              <svg class="floppy-icon" viewBox="0 0 40 40">
+              <svg class="floppy-icon" viewBox="0 0 40 40" aria-hidden="true">
                 <use href="./svg/save.svg#save-icon"></use>
               </svg>
               <p>Вставьте дискету, чтобы продолжить</p>
             </div>
-            <button class="modal-button" type="submit">
+            <button class="button floppy-icon__button" type="submit">
               <span class="button__text">ок</span>
             </button>
           </form>
         </dialog>
       </div>
-    </footer>
+    </main>
     <script src="./scripts/like.js"></script>
   </body>
 </html>
